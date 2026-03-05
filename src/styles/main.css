@@ -232,6 +232,15 @@ li{
     color: #333;
     margin-bottom: 20px;
 }
+.login a{
+    color: #2115d1;
+    font-weight: 700;
+    margin-top: 20px;
+    align-self: end;
+    cursor: pointer;
+    font-style: italic;
+    text-decoration:underline;
+}
 
 /* Estilo para el formulario */
 .form-login {
@@ -290,6 +299,94 @@ li{
     font-size: 12px;
     font-weight: 700;  
     margin-top: 10px; 
+}
+
+/* Estilos para el componente Acerca */
+
+.aboutUs {
+    flex: 1;
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 40px;
+    background-color: #f9f9f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+.aboutUs h1 {
+    color: rgb(19, 89, 159);
+    margin-bottom: 30px;
+    border-bottom: 2px solid #cdc9c9;
+    padding-bottom: 10px;
+}
+
+.aboutUs h2 {
+    color: rgb(19, 89, 159);
+    margin: 30px 0 15px 0;
+    font-size: 1.5rem;
+}
+
+.aboutUs h3 {
+    margin: 0 0 5px 0;
+    color: #333;
+    font-style: normal; /* Sobrescribimos tu h3 general para que sea legible aquí */
+    font-weight: 700;
+}
+
+.aboutUs p {
+    margin-bottom: 15px;
+    color: #444;
+    text-align: justify;
+}
+
+/* Contenedor de listas para que parezcan tarjetas */
+.aboutUs ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.aboutUs li {
+    background-color: rgb(245, 251, 253); /* Un tono muy claro basado en tu azul */
+    border: 1.5px solid rgb(19, 89, 159);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    cursor: default; /* Quitamos el cursor pointer de tus li generales */
+}
+
+.aboutUs li:hover {
+    background-color: rgb(230, 245, 250);
+}
+
+/* Estilo para el botón Home usando tu estética de botones verdes */
+.aboutUs button {
+    display: block;
+    margin: 40px auto;
+    background-color: rgb(20, 175, 74);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.aboutUs button:hover {
+    background-color: rgb(10, 82, 10);
+}
+
+/* Ajuste Responsive */
+@media (max-width: 768px) {
+    .aboutUs {
+        padding: 20px;
+        height: auto;
+    }
+    
+    .aboutUs h1 {
+        font-size: 1.5rem;
+    }
 }
 
 /* responsive design */

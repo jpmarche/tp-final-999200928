@@ -1,7 +1,7 @@
 import { useContext, useState } from "react"; 
 import { ChatContext } from '../context/ChatContext'
 import { useNavigate } from "react-router-dom";
-
+import { Acerca } from "./Acerca";
 
 
 const Login = () => {
@@ -40,8 +40,12 @@ const handleSubmit = (event) => {
 const handleNewContact = () =>{
     navigate("register")
 }
-return(
 
+const aboutUs = () =>{
+    navigate("acerca")
+}
+return(
+    
     <section className="login">   
 
     <h2>Bienvenido, inicia sesion</h2>
@@ -53,7 +57,9 @@ return(
           error ?  <p className="error-login">Usuario o contraseña incorrecta</p> : ""
         }
         <button onClick={handleNewContact} className="button-new-user">Registrarse</button>
+        <a onClick={aboutUs}>Acerca</a>
     </form>
+    
     </section>
 )
 
