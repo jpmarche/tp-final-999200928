@@ -52,7 +52,7 @@ return(
         {
           error ?  <p className="error-login">Usuario o contraseña incorrecta</p> : ""
         }
-     
+        <button onClick={handleNewContact} className="button-new-user">Registrarse</button>
     </form>
     </section>
 )
