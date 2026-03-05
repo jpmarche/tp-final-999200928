@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h3{
+    margin: 20px 10px;
+    font-style: italic;
+}
+.app{
+    height: 100vh;
+    background-color: #f9f9f9;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+aside{
+    background-color: rgb(143, 207, 230);
+    padding: 20px;
+    border: solid rgb(19, 89, 159) 3px;
+    border-radius: 10px;
+    overflow-Y: scroll;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    
+}
+input{
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    outline: none;
+}
+section{
+    flex: 1;
+}
+li{
+    background-color: rgb(238, 236, 236);
+    margin-top: 10px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+li small{
+    display:block ;
+}
+
+h4{
+    color: rgb(78, 77, 77);
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 700;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+small{
+    font-style: italic;
+    color: rgb(71, 181, 78);
+    display: block;
+}
+.offline{
+    color: rgb(77, 77, 77);
+}
+
+.user-aside{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.button-log-out{
+    background-color: green;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    padding: 5px;
+    font-weight: 700;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    width: 100px;
+    align-self: center;
+    margin-bottom: 20px;
+}
+.button-log-out:hover{
+    background-color: rgb(10, 82, 10);
+}
+
+.button-new-user{
+    margin-top: 20px;
+}
+
+li{
+
+    list-style: none;
+    display: block;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 700;
+    border: solid rgb(19, 89, 159) 1px;
+}
+.userImage{
+    width: 30px;
+       
+}
+
+.no-contact{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.chatHeader{
+    background-color: #cdc9c9;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    border-bottom: solid black 2px;
+    padding: 10px;
+}
+.chatHeader p{
+    font-style: italic;
+}
+
+.chatPanel{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+.chatBody{
+    display:flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    
+}
+.chatMessages{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    
+}
+.message{
+    background-color: rgb(237, 237, 237);
+    padding: 10px;
+    margin-top: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.me{
+     align-self: end;
+     background-color: rgb(71, 200, 99);
+     
+}
+.time-stamp{
+    align-self:flex-end ;
+}
+
+.sendMessage{
+    display:flex;
+    gap: 10px;
+    margin: 10px ;
+}
+.sendMessage button{
+    border-radius: 12px;
+    padding: 12px;
+    border: solid rgb(255, 255, 255) 2px;
+    background-color: rgb(20, 175, 74);
+    color: white;
+}
+.sendMessage textarea{
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+   border: solid rgb(168, 168, 168) 2px;
+}
+.sendMessage textarea:focus{
+    border: solid rgb(99, 99, 99) 3px;
+}
+
+
+.sendButton{
+    width: 20px;
+}
+
+.cont-not-found{
+   
+    height: 100vh;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.cont-not-found a{
+    display: block;
+    padding: 10px;
+    background-color: rgb(87, 87, 87);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+
+}
+
+/* login */
+
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.login h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el formulario */
+.form-login {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.form-login input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+}
+
+
+.form-login input::placeholder {
+    color: #888;
+}
+
+.form-login input[type="email"] {
+    margin-top: 0;
+}
+
+
+.form-login input[type="password"] {
+    margin-bottom: 25px;
+}
+
+
+.form-login button {
+    padding: 12px;
+    background-color: #555656;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-login button:hover {
+    background-color: #676a6c;
+}
+
+.error-login{
+    color:rgb(141, 1, 1);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;  
+    margin-top: 10px; 
+}
+
+/* responsive design */
+@media (max-width: 768px) {
+    .app {
+        flex-direction: column;
+       
+    }
+
+    aside {
+        width: 100%; 
+        height: 30vh;
+        flex-shrink: 0; 
+      
+    }
+
+    .message {
+        width: 85%; 
+    }
+   .chatPanel {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+}
+}
