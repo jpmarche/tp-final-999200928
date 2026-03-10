@@ -1,16 +1,56 @@
-# React + Vite
+# 💬 Chat Interactivo - React Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esta es una aplicación de chats desarrollada con **React**. Permite a los usuarios autenticarse, gestionar una lista de contactos y ver los mensajes e incluso enviar un nuevo mensaje.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📝 Descripción del Proyecto
+El proyecto resuelve la necesidad de una comunicación directa y sencilla. Los usuarios pueden registrarse de forma rápida, acceder a su panel personal y visualizar el estado de sus contactos. La aplicación gestiona de forma dinámica el historial de mensajes y 
 
-## React Compiler
+## 🚀 Tecnologías Utilizadas
+El stack tecnológico principal incluye:
+*   **React** Librería principal para la interfaz de usuario.
+*   **React Context API:** Gestión del estado global (Autenticación y Mensajería).
+*   **React Router:** Manejo de navegación dinámica y rutas protegidas.
+*   **CSS:** Diseño responsivo con Flexbox y efectos visuales personalizados.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Partes del proyecto:
 
-## Expanding the ESLint configuration
+**🔐 Sistema de Autenticación:
+Incluye formularios validados de Registro y Login que actúan como puerta de entrada a la aplicación.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**👥 Lista de contactos:
+Un panel lateral dinámico que permite visualizar y seleccionar a los diferentes usuarios disponibles para iniciar una conversación.
+
+ **💬 Panel de Chat:
+El área central y corazón de la app, donde se despliega el historial de mensajes en tiempo real y se gestiona el envío de nueva información.
+
+**🛡️ Navegación Protegida:
+Un sistema que asegura que solo los usuarios autenticados puedan acceder al contenido del chat, redirigiendo a los visitantes no logueados al inicio.
+
+## 💻 Ejecución en Local
+Para correr este proyecto en tu computadora, sigue estos pasos:
+
+1. **Clonar el repositorio:**
+   Abrir una terminal de bash y escribir el siguiente código:
+   git clone https://github.com/jpmarche/tp-final-999200928
+
+
+Abrir el proyecto con Visual Studio Code:
+
+
+Instalar las dependencias:
+En la terminal esribir el siguiente código:
+npm install
+
+
+Iniciar el servidor:
+Escribir en la terminal:
+npm run dev
+
+Aparecera el link para poder abrir el proyecto en el navegador.
+
+## 🌐 Deploy del proyecto:
+Puedes crear un repositorio en GitHub y subir el proyecto, una vez creado puedes documentar la información en deepwiki simplememnte sustituyendo en la url del repositorio github por deepwiki.
+Si quieres hacer el deploy del proyecto en Vercel, puedes acceder al sitio e ingresar con tu cuenta de Github, un a vez que ingresas puedes añadir tu proyecto haceindo click en Add New -> Project -> Import (seleccionas el repositorio) y por ultimo haz click en Deploy.
+Una vez finalizado el deploy, puedes acceder al mismo escribiendo en el navegador "Nombre-del-proyecto.vercel.app".
